@@ -1,0 +1,43 @@
+// Código declarativo en React
+
+El paradigma declarativo en programación es un enfoque que se centra en describir el problema que se desea resolver sin especificar explícitamente cómo debe resolverse. En lugar de dar una serie de instrucciones paso a paso para alcanzar el resultado deseado, en la programación declarativa se proporciona una especificación del problema y el sistema se encarga de encontrar la solución.
+
+Es un estilo de programación en el que se declaran las intenciones y la lógica detrás de un componente o aplicación, en vez de especificar cómo se deben realizar los pasos para lograr el resultado deseado.
+En otras palabras, se enfoca en qué se quiere lograr, en lugar de cómo se logra.
+
+Este enfoque permite una mayor legibilidad del código y separar la lógica de cada componente en un solo lugar para poder reutilizarla y mantenerla de forma mucho más sencilla.
+
+// Programación declarativa -> El que...
+// Esta basado en el cálculo lambda, es mas parecido al lenguaje humano
+
+const menoresQue100 = miArray.filter(numero => numero > 100);
+
+console.log(menoresQue100);
+
+
+
+// Diferencias con el código imperativo
+
+Por el contrario, el código imperativo es un estilo de programación en el que se especifican los pasos detallados que se deben realizar para lograr un resultado específico. Es decir, se enfoca en cómo se logra un resultado.
+Puede ser menos legible y requerir más código, ya que se detallan todos los pasos necesarios para lograr un resultado, incluyendo validaciones, bucles y control de flujo.
+Un ejemplo de este estilo, es la creación de una UI utilizando Vanilla JS donde somos nosotros quienes debemos indicar paso a paso cómo generar cada elemento en el DOM y dónde.
+
+//MENORES QUE 100
+
+// Programación imperativa -> El como...
+// Es lo mas cercano a como funciona una computadora
+
+let miArray = [14,200,3300,40,55,12,30,400];
+
+function filtrarMenoresQue100(numeros) {
+    const menoresQue100 = [];
+
+    for(let i=0; i < numeros.length; i++){
+        if(numeros[i] < 100){
+            menoresQue100.push(numeros[i]);
+        }
+    }
+    console.log(menoresQue100);
+}
+
+filtrarMenoresQue100(miArray);
