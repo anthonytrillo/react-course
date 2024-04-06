@@ -1,0 +1,8 @@
+// Virtual DOM
+
+Es un patrón de comportamiento, y React lo implementa con una tecnología llamada “Fiber”.
+En sí resulta ser todo lo que React sabe de tu aplicación y cada nodo o fibra.
+
+Esto es básicamente lo que React hace con el Virtual DOM: una representación virtual de la UI que se mantiene en memoria y en sincronía “reconciliado” con el DOM “real”.
+
+React no actualiza directamente el DOM sino lo que guarda los cambios en el DOM Virtual y luego compara esos cambios con un estado anterior del DOM Vitual con lo cual sabe cuales son los cambios mínimos a realizar en el DOM real.

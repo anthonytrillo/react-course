@@ -1,0 +1,6 @@
+// React fiber
+
+React Fiber es una revisión interna de la arquitectura principal de React, diseñada para mejorar el rendimiento y la capacidad de respuesta de las aplicaciones React. Fue introducida en la versión 16 de React.
+
+La principal característica de React Fiber es su capacidad para realizar la reconciliación incremental. La reconciliación es el proceso mediante el cual React determina qué partes de la interfaz de usuario deben actualizarse en respuesta a un cambio en los datos o en el estado de la aplicación. La reconciliación incremental significa que React puede dividir el trabajo de reconciliación en pequeñas unidades, lo que permite pausar, reanudar o cancelar el trabajo en cualquier momento. Esto es especialmente útil para mantener una experiencia de usuario fluida en aplicaciones con interfaces de usuario complejas y dinámicas.
+
