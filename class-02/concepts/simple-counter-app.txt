@@ -1,0 +1,30 @@
+// Declarative Code in React
+
+In React, declarative code is a key principle that allows developers to describe what they want their UI to look like, without having to worry about the underlying implementation details.
+Instead of manually manipulating the DOM to update the UI, React provides a declarative approach where you define the desired UI state and React takes care of updating the DOM efficiently.
+Here's an example to illustrate the concept of declarative code in React:
+
+// App.js
+import React from 'react';
+
+function App() {
+  const [count, setCount] = React.useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <h1>Counter: {count}</h1>
+      <button onClick={increment}>Increment</button>
+    </div>
+  );
+}
+
+export default App;
+
+In the above code, we have a simple counter component. The count state is managed using the useState hook provided by React. When the button is clicked, the increment function is called, which updates the count state using the setCount function.
+Notice how we are not directly manipulating the DOM to update the counter value. Instead, we declare the desired UI state in the return statement using JSX syntax, and React takes care of updating the DOM efficiently.
+This declarative approach makes it easier to reason about the UI and allows React to optimize the rendering process by only updating the necessary parts of the DOM.
+By using declarative code in React, developers can focus on describing the desired UI state and let React handle the implementation details, resulting in more maintainable and efficient code.
