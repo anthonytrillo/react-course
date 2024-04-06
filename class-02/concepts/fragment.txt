@@ -1,0 +1,29 @@
+// Fragment
+
+En React, un "fragmento" es una forma de agrupar múltiples elementos hijos sin necesidad de añadir un elemento adicional al DOM. Básicamente, un fragmento te permite agrupar una lista de elementos hijos en un contenedor virtual sin agregar nodos adicionales al árbol DOM resultante.
+
+Antes de la introducción de los fragmentos en React, si querías devolver múltiples elementos hermanos desde un componente, necesitabas envolverlos en un elemento contenedor, lo cual podía afectar la estructura del DOM o generar errores en ciertas situaciones. Los fragmentos resuelven este problema al permitirte devolver una lista de elementos hijos desde un componente sin necesidad de un contenedor adicional.
+
+
+function ListaDeElementos() {
+  return (
+    <>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <h1>Lista de elementos:</h1>
+      <ul>
+        <ListaDeElementos />
+      </ul>
+    </div>
+  );
+}
+
+export default App;
