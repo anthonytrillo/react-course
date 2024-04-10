@@ -1,0 +1,16 @@
+// Sugar Syntax
+
+Sugar Syntax refiere a la sintaxis agregada a un lenguaje de programación con el objetivo de hacer más fácil y eficiente su utilización. Favorece su escritura, lectura y comprensión.
+
+i = i + 1	 →  i++
+
+¿Por qué existe el Sugar-Syntax?
+Los lenguajes tienen una tendencia natural a evolucionar en la manera de ser escritos.
+
+Causas principales:
+
+- Críticas de la comunidad.
+
+- Grado de adoptabilidad.
+
+- Dificultad de implementar patrones de diseño comunes en otros lenguajes.

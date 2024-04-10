@@ -1,0 +1,7 @@
+// Transpiling
+
+El transpilado, también conocido como transpiling, es el proceso de transformar el código fuente de un lenguaje de programación a otro lenguaje de programación similar, manteniendo la funcionalidad. Por lo general, se realiza para permitir que el código escrito en un lenguaje moderno o de alto nivel sea compatible con versiones anteriores de un lenguaje o para permitir que sea ejecutado en entornos que no son compatibles con la sintaxis original.
+
+El caso más común de transpilado ocurre en el desarrollo web moderno, donde los desarrolladores suelen escribir código en lenguajes como JavaScript utilizando características de las versiones más recientes del estándar ECMAScript. Sin embargo, para garantizar que el código funcione en navegadores más antiguos que no admiten estas características, se utiliza un transpilador para convertir el código fuente de ECMAScript moderno a una versión más antigua compatible con esos navegadores. Uno de los transpiladores más populares para este propósito es Babel.
+
+El transpilado también se utiliza en otros contextos, como en el desarrollo de aplicaciones móviles, donde el código escrito en un lenguaje de programación, como TypeScript o Dart, puede ser transpilado a código nativo para iOS o Android. Esto permite a los desarrolladores utilizar un lenguaje de programación familiar y potente mientras desarrollan aplicaciones móviles.

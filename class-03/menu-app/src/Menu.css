@@ -1,0 +1,20 @@
+.menu {
+  background-color: #333;
+  padding: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}

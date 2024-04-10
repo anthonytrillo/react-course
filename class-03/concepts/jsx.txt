@@ -1,0 +1,43 @@
+// JSX
+
+JSX es una extensión de sintaxis de Javascript que se parece a HTML
+
+Oficialmente, es una extensión que permite hacer llamadas a funciones y a construcción de objetos. No es ni una cadena de caracteres, ni HTML.
+
+JSX es una extensión de Javascript, no de React.
+
+Esto significa que no hay obligación de utilizarlo, pero es recomendado en el sitio web oficial de React.
+
+// JSX se transforma en código JavaScript.
+
+Esto nos da algunas ventajas, como ver errores en tiempo de compilación, asignar variables, retornar métodos, etc.
+
+<div className="active">Hola Coders</div>
+
+React.createElement('div', { className: active }, 'Hola Coders');
+
+// Styling en JSX
+
+Es posible definir y utilizar estilos inline en JSX, solo necesitamos convertirlos por convención:
+
+border-color => borderColor
+padding-top => paddingTop
+‘10px’ => 10 (no es necesario el px)
+
+// Inline styles en JSX
+
+Los mismos estilos se pueden configurar inline en JSX, solo necesitamos usar doble llave {{ }},
+
+- La primera llave para avisar que se agregará un objeto en js.
+- La segunda llave para empezar a escribir el objeto en sí.
+
+const Salute = () => <p style={{ marginLeft: 15 }}>Hello</p>
+
+// Reglas generales
+
+- Los elementos deben ser balanceados. Por cada apertura debe haber un cierre.
+<img src=""> Mal
+<img src=""></img> Es mejorable
+
+- Si el elemento no tiene hijos, debe idealmente ser auto-cerrado
+<img src="" /> Ideal

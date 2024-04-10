@@ -1,0 +1,114 @@
+// Menu App
+
+// Sin estilos
+
+const Menu = () => {
+  return (
+    <div>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  );
+}
+
+export default Menu;
+
+
+// Estilos inline
+
+const Menu = () => {
+  return (
+    <div style={{ backgroundColor: "#333", padding: "10px" }}>
+      <ul>
+        <li style={{ display: "inline", marginRight: "10px" }}><a href="#" style={{ color: "#fff", textDecoration: "none" }}>Inicio</a></li>
+        <li style={{ display: "inline", marginRight: "10px" }}><a href="#" style={{ color: "#fff", textDecoration: "none" }}>Acerca de</a></li>
+        <li style={{ display: "inline", marginRight: "10px" }}><a href="#" style={{ color: "#fff", textDecoration: "none" }}>Servicios</a></li>
+        <li style={{ display: "inline", marginRight: "10px" }}><a href="#" style={{ color: "#fff", textDecoration: "none" }}>Contacto</a></li>
+      </ul>
+    </div>
+  );
+}
+
+export default Menu;
+
+
+
+// Una mejor manera de estilos inline
+
+const Menu = () => {
+  const menuStyle = {
+    backgroundColor: '#333',
+    padding: '10px'
+  };
+
+  const listItemStyle = {
+    display: 'inline',
+    marginRight: '10px'
+  };
+
+  const linkStyle = {
+    color: '#fff',
+    textDecoration: 'none'
+  };
+
+  return (
+    <div style={menuStyle}>
+      <ul>
+        <li style={listItemStyle}><a href="#" style={linkStyle}>Inicio</a></li>
+        <li style={listItemStyle}><a href="#" style={linkStyle}>Acerca de</a></li>
+        <li style={listItemStyle}><a href="#" style={linkStyle}>Servicios</a></li>
+        <li style={listItemStyle}><a href="#" style={linkStyle}>Contacto</a></li>
+      </ul>
+    </div>
+  );
+}
+
+export default Menu;
+
+
+
+// Agregando estilos en un archivo CSS Menu.css
+
+import './Menu.css';
+
+const Menu = () => {
+  return (
+    <div className="menu">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  );
+}
+
+export default Menu;
+
+// Menu.css
+
+.menu {
+  background-color: #333;
+  padding: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}

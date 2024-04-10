@@ -1,0 +1,26 @@
+// Pollyfills
+
+Los polyfills (o "rellenos") son fragmentos de código (generalmente JavaScript) que proporcionan implementaciones de características o funcionalidades que faltan en navegadores más antiguos o en entornos que no admiten ciertas características de JavaScript o APIs del navegador. Estos polyfills se utilizan para rellenar los vacíos de funcionalidad y permitir que las aplicaciones funcionen correctamente en navegadores más antiguos o en entornos donde las características específicas no están disponibles de forma nativa.
+
+Por otro lado, la retrocompatibilidad (o "compatibilidad hacia atrás") se refiere a la capacidad de una aplicación o tecnología para funcionar correctamente en versiones anteriores de un navegador, sistema operativo u otra plataforma. La retrocompatibilidad es importante para asegurar que las aplicaciones desarrolladas puedan ser utilizadas por una amplia gama de usuarios, incluyendo aquellos que aún utilizan versiones antiguas de software.
+
+Los polyfills son una herramienta clave para lograr la retrocompatibilidad en aplicaciones web modernas. Permiten a los desarrolladores escribir código utilizando las últimas características de JavaScript o APIs del navegador, y luego proporcionan implementaciones alternativas para esos mismos features en navegadores que no los admiten de forma nativa. Esto asegura que la aplicación pueda ejecutarse en una amplia variedad de entornos, manteniendo al mismo tiempo un alto nivel de funcionalidad y experiencia de usuario.
+
+// Una historia de retrocompatibilidad:
+// El mundo de los “sumadores” es invadido por los “multiplicadores”
+
+El antiguo mundo que siempre fue conocido por saber la existencia de los números y su capacidad para sumarlos...
+
+Al llegar los multiplicadores, empezaron a colonizar y establecieron la multiplicación como nuevo método de operar.
+
+Obligados por la fuerte falta de inclusión que generó esto, apareció ‘Francis Polyfill’ con una gran idea...
+
+“¡Sabemos que ustedes no pueden multiplicar, pero no os preocupéis!”
+Si les cuesta multiplicar… pueden tratar lo siguiente: “¡simplemente sumen!”
+
+Si nosotros hacemos 10 x 2, y ustedes no saben hacerlo, simplemente hagan lo que hicieron siempre: ¡sumen!
+2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2  = 20
+
+Entonces se entendieron y se integraron. Crearon una manera de resolver un problema nuevo con los recursos que ya tenían, y nadie quedó excluido de multiplicar.
+
+Los polyfills nos permiten hacer nuestra aplicación compatible con navegadores antiguos, que no admiten de forma nativa alguna nueva funcionalidad
